@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApplicationCore\File.Service\File.Service.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\File.DB.dataAccess\File.DB.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\File.Json.DataAccess\File.Json.DataAccess.csproj" />
+  </ItemGroup>
+
+
+</Project>
